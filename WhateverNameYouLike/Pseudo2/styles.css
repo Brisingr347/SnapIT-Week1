@@ -1,0 +1,19 @@
+#a1::before {
+  content: ">>";
+}
+
+#a2::before {
+  content: "/ ";
+}
+
+#a3::before {
+  content: "/ ";
+}
+
+#a1,
+#a2,
+#a3 {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
