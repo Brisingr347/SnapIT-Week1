@@ -30,17 +30,17 @@ ul li a:hover {
 }
 
 ol li {
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #Ingredients li {
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  text-align: center;
 }
