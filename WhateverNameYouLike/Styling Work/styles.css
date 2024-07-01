@@ -54,3 +54,55 @@ h2,
   color: orange;
   border-color: green;
 }
+
+.days {
+  list-style-position: inside;
+}
+
+.days li {
+  text-transform: uppercase;
+  color: #a0a;
+  font-size: 1.4em;
+}
+
+.flavors {
+  list-style-type: circle;
+}
+
+.flavors li {
+  font-size: 1.2em;
+  text-transform: lowercase;
+}
+
+.nav-h,
+.nav-v {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-h li {
+  float: left;
+}
+
+.nav-v {
+  width: 200px;
+}
+
+ul li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
