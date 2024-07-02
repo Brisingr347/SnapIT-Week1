@@ -106,3 +106,26 @@ ul li a:hover {
 .active {
   background-color: #04aa6d;
 }
+
+#handling-div {
+  background-color: #17255a;
+}
+
+#handling-h1 {
+  text-align: left;
+  background-color: #7c9885;
+}
+
+#handling-p {
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  display: inline;
+  /* display: inline-block; */
+  background-color: #5e0b15;
+}
+
+#handling-a {
+  display: block;
+  /* display: inline-block; */
+  background-color: #fde74c;
+}
