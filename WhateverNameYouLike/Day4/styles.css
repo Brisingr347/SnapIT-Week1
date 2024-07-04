@@ -1,0 +1,19 @@
+div {
+  height: 30px;
+  margin: 5px;
+}
+
+.introduction {
+  display: block;
+  background-color: #548ca8;
+}
+
+.main-content {
+  display: block;
+  background-color: #476072;
+}
+
+.contact-us {
+  display: block;
+  background-color: #334257;
+}
