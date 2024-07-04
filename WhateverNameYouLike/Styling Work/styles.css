@@ -149,15 +149,17 @@ ul li a:hover {
 }
 
 .position-example {
+  position: relative;
   background-color: green;
   height: 150px;
 }
 
 .position-a {
   position: absolute;
-  /* bottom: 0; */
-  right: 0;
-  top: 0;
+  bottom: 0;
+  /* right: 0; */
+  /* top: 0; */
+  left: 0;
   background-color: orange;
   text-align: left;
 }
@@ -165,4 +167,13 @@ ul li a:hover {
 .position-r {
   background-color: rgb(198, 211, 78);
   color: black;
+}
+
+.span-p {
+  font-size: 1.5em;
+}
+
+.span-p span {
+  font-weight: bold;
+  color: blue;
 }
