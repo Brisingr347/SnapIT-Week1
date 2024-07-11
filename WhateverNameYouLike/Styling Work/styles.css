@@ -372,3 +372,21 @@ height: 25px; */
 .main-semantic-left {
   grid-area: main-lt;
 }
+
+.main-semantic-right {
+  grid-area: main-rt;
+}
+
+.semantic-footer {
+  grid-area: foot;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.semantic-footer p {
+  display: inline;
+}
+
+.semantic-article {
+  grid-area: art;
+}
