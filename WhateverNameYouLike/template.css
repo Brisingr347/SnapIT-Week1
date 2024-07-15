@@ -7,6 +7,10 @@
   background-color: #fff4e6;
   max-width: 940px;
   margin: 0 auto;
+  grid-template-areas:
+    "h h h h h h h h h h"
+    "s s s c c c c c c c"
+    "f f f f f f f f f f";
 }
 
 .wrapper div {
@@ -18,21 +22,17 @@
 }
 
 .Header {
-    grid-column: 1 / 10;
-    grid-row: 1 / 2;
+  grid-area: h;
 }
 
 .Sidebar {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
+  grid-area: s;
 }
 
 .Content {
-    grid-column: 4 / 10;
-    grid-row: 2 / 3;
+  grid-area: c;
 }
 
 .Footer {
-    grid-column: 1 / 10;
-    grid-row: 3 / 4;
+  grid-area: f;
 }
