@@ -365,8 +365,9 @@ height: 25px; */
 
 .main-semantic {
   display: grid;
-  grid-template-areas: "main-lt main-rt"
-  "art art";
+  grid-template-areas:
+    "main-lt main-rt"
+    "art art";
 }
 
 .main-semantic-left {
@@ -389,4 +390,15 @@ height: 25px; */
 
 .semantic-article {
   grid-area: art;
+}
+
+@media screen and (max-width: 600px) {
+  .container-div {
+    grid-template-areas:
+      "nav"
+      "left"
+      "main"
+      "right"
+      "foot";
+  }
 }
