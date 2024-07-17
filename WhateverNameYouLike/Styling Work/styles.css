@@ -401,4 +401,27 @@ height: 25px; */
       "right"
       "foot";
   }
+
+  .wrapper-semantic {
+    grid-template-areas:
+      "nav"
+      "left"
+      "main"
+      "right"
+      "foot";
+  }
+
+  .semantic-nav {
+    display: none;
+  }
+
+  .main-semantic {
+    grid-template-areas:
+      "main-lt"
+      "main-rt" "art";
+  }
+
+  .nav-v {
+    width: 100%;
+  }
 }
