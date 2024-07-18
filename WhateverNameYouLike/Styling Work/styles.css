@@ -418,7 +418,8 @@ height: 25px; */
   .main-semantic {
     grid-template-areas:
       "main-lt"
-      "main-rt" "art";
+      "main-rt"
+      "art";
   }
 
   .nav-v {
