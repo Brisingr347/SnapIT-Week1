@@ -84,4 +84,47 @@ h2 {
   .main-table thead {
     float: left;
   }
+
+  .main-table tbody {
+    width: auto;
+    overflow: auto;
+  }
+
+  .main-table td,
+  .main-table th {
+    padding: 20px 0.645em 0.635em 0.625 em;
+    height: 50px;
+    vertical-align: middle;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+
+  .main-table thead th {
+    text-align: center;
+    border-bottom: 1px solid #f7f7f9;
+  }
+
+  .main-table tbody tr {
+    display: table-cell;
+  }
+
+  .main-table tbody tr:nth-child(odd) {
+    background: none;
+  }
+
+  .main-table tr:nth-child(even) {
+    background: transparent;
+  }
+
+  .main-table tr td:nth-child(odd) {
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
+  }
+
+  .main-table tbody td {
+    display: block;
+  }
 }
