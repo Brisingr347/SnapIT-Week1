@@ -1,0 +1,31 @@
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3dccc7;
+  position: sticky;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav-bar li {
+  float: left;
+}
+
+.nav-bar ul li a:hover {
+  background-color: darkcyan;
+  color: black;
+}
+
+.active {
+  background-color: lightgrey;
+  color: black;
+}
