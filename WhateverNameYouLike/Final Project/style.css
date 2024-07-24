@@ -1,4 +1,4 @@
-body{
+body {
   width: auto;
 }
 
@@ -15,7 +15,7 @@ body{
   display: block;
   color: grey;
   text-align: center;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   text-decoration: none;
   font-size: 1.5em;
 }
@@ -33,18 +33,18 @@ body{
   color: black;
 }
 
-nav{
+nav {
   position: sticky;
   top: 0;
 }
 
 div {
-height: 700px;
+  height: 700px;
 }
 
 footer {
   display: block;
-  background-image: linear-gradient( gray, black);
+  background-image: linear-gradient(gray, black);
   font-size: 1.2em;
   height: 200px;
   text-align: center;
@@ -59,18 +59,18 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
 }
 
 h1::first-letter {
- font-style: italic;
+  font-style: italic;
   font-size: 1.8em;
 }
 
 h1 {
-font-family: 'Courier New', Courier, monospace;
-font-weight: lighter;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
 }
 
 p {
