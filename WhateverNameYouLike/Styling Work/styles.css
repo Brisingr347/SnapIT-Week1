@@ -428,7 +428,7 @@ height: 25px; */
 }
 
 .basic-form {
-margin: 32px 0;
+  margin: 32px 0;
 }
 
 #fname {
@@ -440,3 +440,12 @@ margin: 32px 0;
   border: 4px solid #555;
 }
 
+.basic-form,
+.more-form {
+  margin: 32px 0;
+}
+
+#favcolor {
+  width: 200px;
+  text-align: center;
+}
