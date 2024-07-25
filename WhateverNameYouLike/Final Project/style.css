@@ -39,6 +39,10 @@ nav {
   top: 0;
 }
 
+button {
+  display: none;
+}
+
 h1::first-letter {
   font-style: italic;
   font-size: 1.8em;
@@ -65,11 +69,7 @@ p {
   width: 100%;
 }
 
-.books {
-  height: 17em;
-  width: auto;
-}
-
+.books,
 .impact {
   height: 17em;
   width: auto;
@@ -124,7 +124,7 @@ footer ul li {
 }
 
 footer ul li a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
@@ -157,7 +157,7 @@ footer ul li a {
 
 .graphic {
   grid-area: rs;
-  text-align: center
+  text-align: center;
 }
 
 .graphic h2 {
@@ -168,10 +168,65 @@ footer ul li a {
 
 .intern {
   grid-area: ml;
-  text-align: center
+  text-align: center;
 }
 
 .next {
   grid-area: rsb;
   text-align: center;
+}
+
+/* Mobile Display */
+@media (max-width: 730px) {
+  .nav-bar {
+    display: none;
+  }
+
+  button {
+    display: block;
+    background-color: #68d8d6;
+    border-radius: 5px;
+    border: 3px solid lightgray;
+    font-size: 2em;
+    font-weight: lighter;
+  }
+
+  .button {
+    position: sticky;
+    top: 0;
+  }
+
+  section {
+    grid-template-areas:
+      "rs ls"
+      "rsb lsb"
+      "foot foot";
+    margin: 2.3em;
+  }
+
+  .rs {
+    grid-area: rs;
+  }
+
+  .ls {
+    grid-area: ls;
+  }
+
+  .rsb {
+    grid-area: rsb;
+  }
+
+  .lsb {
+    grid-area: lsb;
+  }
+
+  .footer {
+    grid-area: foot;
+  }
+
+  .books,
+  .impact {
+    border-radius: 100px;
+    border: 0.2em solid darkgray;
+  }
 }
