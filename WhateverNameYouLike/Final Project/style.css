@@ -8,7 +8,8 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: linear-gradient(to right, #c4fff9, #3dccc7);
+  background-image: linear-gradient(to right, #c4fff9, #07beb8, purple);
+  border: 0.2em solid lightgray;
 }
 
 .nav-bar li a {
@@ -30,7 +31,7 @@ body {
 }
 
 .active {
-  color: black;
+  background-color: lightgray;
 }
 
 nav {
@@ -38,15 +39,81 @@ nav {
   top: 0;
 }
 
-div {
-  height: 700px;
+h1::first-letter {
+  font-style: italic;
+  font-size: 1.8em;
+  color: #07beb8;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Home Page */
+#home {
+  height: 31.2em;
+}
+
+.img {
+  height: 5em;
+  width: 100%;
+}
+
+.books {
+  height: 17em;
+  width: auto;
+}
+
+.impact {
+  height: 17em;
+  width: auto;
+}
+
+section {
+  display: grid;
+  grid-template-areas:
+    "rs rs ls"
+    "rsb lsb lsb"
+    "foot foot foot";
+  height: auto;
+}
+
+.rs {
+  grid-area: rs;
+  text-align: center;
+}
+
+.ls {
+  grid-area: ls;
+  text-align: center;
+}
+
+.rsb {
+  grid-area: rsb;
+  text-align: center;
+}
+
+.lsb {
+  grid-area: lsb;
+  text-align: center;
+}
+
+.footer {
+  grid-area: foot;
 }
 
 footer {
-  display: block;
   background-image: linear-gradient(gray, black);
   font-size: 1.2em;
-  height: 200px;
+  height: auto;
+  width: 100%;
+  margin-bottom: 3em;
   text-align: center;
   color: white;
 }
@@ -63,16 +130,48 @@ footer ul li a {
   font-weight: lighter;
 }
 
-h1::first-letter {
-  font-style: italic;
-  font-size: 1.8em;
+.fusion-standard-logo {
+  width: 1em;
+  height: auto;
 }
 
-h1 {
+.sFlh5c-pT0Scc-iPVvYb {
+  width: 7em;
+  height: auto;
+}
+
+.WIOA {
+  width: 3em;
+  height: auto;
+}
+
+/* Anastasia's Page */
+
+.sec {
+  display: grid;
+  grid-template-areas:
+    "rs rs rs rs ls ls ls"
+    "mr mr mr ml ml ml ml"
+    "rsb rsb rsb rsb lsb lsb lsb";
+}
+
+.graphic {
+  grid-area: rs;
+  text-align: center
+}
+
+.graphic h2 {
   font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
+  font-size: 1.5em;
 }
 
-p {
-  font-size: 1.2em;
+.intern {
+  grid-area: ml;
+  text-align: center
+}
+
+.next {
+  grid-area: rsb;
+  text-align: center;
 }
