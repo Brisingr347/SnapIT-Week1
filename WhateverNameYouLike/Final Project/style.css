@@ -10,7 +10,8 @@ body {
   align-items: center;
   background-image: linear-gradient(to right, #c4fff9, #07beb8, purple);
   border: 0.2em solid lightgray;
-  padding: 0.5em;
+  margin: .2em;
+  padding: 0.5em 0;
   height: 40px;
   position: sticky;
   top: 0;
@@ -27,7 +28,7 @@ body {
 .nav-links li a {
   color: gray;
   text-align: center;
-  padding: 1em;
+  padding: .7em;
   text-decoration: none;
   font-size: 1.5em;
 }
