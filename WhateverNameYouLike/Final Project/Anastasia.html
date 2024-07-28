@@ -8,11 +8,28 @@
   </head>
   <body id="aj">
     <!-- Nav Bar -->
-    <nav>
-      <ul class="nav-bar">
-        <li><a href="home.html">Home</a></li>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a class="active" href="#">Home</a></li>
         <li><a href="Sophia.html">Sophia</a></li>
-        <li><a class="active" href="#">Anastasia</a></li>
+        <li><a href="Anastasia.html">Anastasia</a></li>
+      </ul>
+
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        onclick="console.log(this.checked)"
+      />
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="mobile-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="Sophia.html">Sophia</a></li>
+        <li><a href="Anastasia.html">Anastasia</a></li>
       </ul>
     </nav>
 
@@ -24,7 +41,10 @@
           non, rem quibusdam ad quos.
         </p>
         <h2>My Motivation</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi deserunt, dicta omnis hic veritatis maxime.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+          deserunt, dicta omnis hic veritatis maxime.
+        </p>
       </div>
 
       <div class="intern">

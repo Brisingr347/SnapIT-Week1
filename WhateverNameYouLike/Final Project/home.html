@@ -15,23 +15,29 @@
     />
 
     <!-- Nav Bar -->
-    <nav>
-      <ul class="nav-bar">
+    <nav class="navbar">
+      <ul class="nav-links">
         <li><a class="active" href="#">Home</a></li>
         <li><a href="Sophia.html">Sophia</a></li>
         <li><a href="Anastasia.html">Anastasia</a></li>
       </ul>
-    </nav>
 
-    <div class="button">
-      <select name="dropdown" id="dropdown">
-        <option value="Home"><a href="home.html"></a>Home</option>
-        <option value="Sophia"><a href="Sophia.html"></a>Sophia</option>
-        <option value="Anastasia">
-          <a href="Anastasia.html"></a>Anastasia
-        </option>
-      </select>
-    </div>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        onclick="console.log(this.checked)"
+      />
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="mobile-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="Sophia.html">Sophia</a></li>
+        <li><a href="Anastasia.html">Anastasia</a></li>
+      </ul>
+    </nav>
 
     <!-- Questions -->
     <section>
@@ -104,6 +110,7 @@
             style="
               display: block;
               -webkit-user-select: none;
+              user-select: none;
               margin: auto;
               cursor: zoom-in;
               background-color: hsl(0, 0%, 90%);
