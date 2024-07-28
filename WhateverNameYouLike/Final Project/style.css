@@ -79,7 +79,7 @@ body {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-#menu-toggle:checked ~ .menu-icon ~ .mobile-menu {
+#menu-toggle:checked + .menu-icon ~ .mobile-menu {
   display: block !important;
   visibility: visible !important;
 }
@@ -209,7 +209,7 @@ footer ul li a {
   height: auto;
 }
 
-.sFlh5c-pT0Scc-iPVvYb {
+.workforce-logo {
   width: 7em;
   height: auto;
 }
