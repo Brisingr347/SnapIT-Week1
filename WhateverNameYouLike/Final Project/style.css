@@ -9,10 +9,11 @@ body {
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(to right, #c4fff9, #07beb8, purple);
-  border: 0.2em solid lightgray;
+  border: 0.2em solid darkgray;
   margin: 0.2em;
+  margin-top: 0;
   padding: 0.5em 0;
-  height: 40px;
+  height: 3em;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -28,9 +29,9 @@ body {
 .nav-links li a {
   color: gray;
   text-align: center;
-  padding: 0.7em;
+  padding: 0.45em;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .nav-links li a:hover {
@@ -117,23 +118,31 @@ body {
 /* Overall Styles */
 h1::first-letter {
   font-style: italic;
-  font-size: 1.8em;
+  font-size: 2.5em;
   color: #07beb8;
 }
 
 h1 {
   font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+img {
+  height: 30em;
+  width: auto;
+  border-radius: 200px;
+  border: 0.2em solid darkgray;
 }
 
 /* Home Page */
-#home {
-  height: 31.2em;
+.home {
+height: fit-content;
 }
 
 .img {
@@ -141,12 +150,8 @@ p {
   height: 5em;
   width: 100%;
   z-index: 1;
-}
-
-.books,
-.impact {
-  height: 17em;
-  width: auto;
+  border: none;
+  border-radius: 0;
 }
 
 section {
@@ -156,6 +161,11 @@ section {
     "rsb lsb lsb"
     "foot foot foot";
   height: auto;
+  margin: 2em;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  border: 0.5em dotted #68d8d6;
 }
 
 .rs {
@@ -184,12 +194,14 @@ section {
 
 footer {
   background-image: linear-gradient(gray, black);
-  font-size: 1.2em;
+  font-size: 1.5em;
   height: auto;
   width: 100%;
-  margin-bottom: 3em;
   text-align: center;
   color: white;
+  position: relative;
+  padding-top: .5em;
+  padding-bottom: 1em;
 }
 
 footer ul li {
@@ -207,16 +219,22 @@ footer ul li a {
 .fusion-standard-logo {
   width: 1em;
   height: auto;
+  border: none;
+  border-radius: 0;
 }
 
 .workforce-logo {
   width: 7em;
   height: auto;
+  border: none;
+  border-radius: 0;
 }
 
 .WIOA {
   width: 3em;
   height: auto;
+  border: none;
+  border-radius: 0;
 }
 
 /* Anastasia's Page */
@@ -227,6 +245,7 @@ footer ul li a {
     "rs rs rs rs ls ls ls"
     "mr mr mr ml ml ml ml"
     "rsb rsb rsb rsb lsb lsb lsb";
+  align-items: center;
 }
 
 .graphic {
@@ -237,7 +256,11 @@ footer ul li a {
 .graphic h2 {
   font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
-  font-size: 1.5em;
+  font-size: 2em;
+}
+
+#color {
+  grid-area: ls;
 }
 
 .intern {
@@ -245,9 +268,17 @@ footer ul li a {
   text-align: center;
 }
 
+#vr {
+  grid-area: mr;
+}
+
 .next {
   grid-area: rsb;
   text-align: center;
+}
+
+#arrow {
+  grid-area: lsb;
 }
 
 /* Mobile Display */
@@ -266,6 +297,7 @@ footer ul li a {
       "rs ls"
       "rsb lsb"
       "foot foot";
+      border-style: dotted none;
   }
 
   .rs {
@@ -288,9 +320,60 @@ footer ul li a {
     grid-area: foot;
   }
 
-  .books,
+  .books {
+    height: 25em;
+    width: auto;
+  }
+
   .impact {
-    border-radius: 100px;
-    border: 0.2em solid darkgray;
+    height: 28em;
+    width: 20em;
+  }
+
+  .sec {
+    grid-template-areas:
+      "rs rs ls"
+      "ml ml ml"
+      "mr mr mr"
+      "rsb rsb lsb";
+  }
+
+  .graphic {
+    grid-area: rs;
+  }
+
+  #color {
+    grid-area: ls;
+  }
+
+  .intern {
+    grid-area: ml;
+  }
+
+  #vr {
+    grid-area: mr;
+  }
+
+  .next {
+    grid-area: rsb;
+  }
+
+  #arrow {
+    grid-area: lsb;
+  }
+
+  .color {
+    height: 35em;
+    width: 20em;
+  }
+
+  .vr {
+    height: auto;
+    width: 40em;
+  }
+
+  .arrow {
+    height: 25em;
+    width: auto;
   }
 }
